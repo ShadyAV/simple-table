@@ -1,3 +1,14 @@
+const cells = document.querySelectorAll('.cell');
+const block = document.querySelector('#block');
+
+cells.forEach(cell => {
+    cell.addEventListener('click', () => {
+        block.textContent = cell.textContent;
+    });
+});
+
+//------------------------------------------------
+
 const data = {
     a0: {
         aa: [3, 9],
