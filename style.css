@@ -2,7 +2,7 @@
 
 :root {
     --white: #fff;
-    --gunmetal: #E6E6E6;
+    --putty: #E6E6E6;
 }
 
 * {
@@ -19,7 +19,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--putty);
     gap: 15px;
 }
 
@@ -39,7 +38,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--gunmetal);
+    background-color: var(--putty);
 }
 
 .cell:hover {
@@ -67,4 +66,37 @@ body {
 #block:not(:hover) {
     opacity: 1;
     transition: opacity .65s ease-in-out;
+}
+
+@media (max-width: 615px) {
+    #table {
+        height: 300px;
+        width: 500px;
+    }
+
+    #block {
+        width: 500px;
+    }
+}
+
+@media (max-width: 515px) {
+    #table {
+        height: 250px;
+        width: 400px;
+    }
+
+    #block {
+        width: 400px;
+    }
+}
+
+@media (max-width: 415px) {
+    #table {
+        height: 200px;
+        width: 300px;
+    }
+
+    #block {
+        width: 300px;
+    }
 }
